@@ -213,6 +213,32 @@ nav li {
     animation: 1.5s pulsate infinite;
 }
 
+@media screen and (max-width: 620px) {
+    .introduction {
+      flex-wrap: wrap;
+        
+    }
+    
+    .blurp {
+      flex-basis: 100%;
+      margin: 30px 0;
+    }
+    
+    .blurp p {
+      max-width: 50px;
+      
+    }
+
+    .hero .hero-content {
+        margin-top: 150px;
+    }
+
+    .hero {
+        height: 100%;
+    }
+
+  }
+
 
 
 
