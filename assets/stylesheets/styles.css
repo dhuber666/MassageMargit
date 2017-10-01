@@ -67,6 +67,16 @@ nav li {
     margin: 0 10px;
 }
 
+hr {
+    border: none;
+    width: 150px;
+    height: 4px;
+    background: #B51B6E;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 770px) {
     header nav li a {
         font-size: 12px;
