@@ -7,7 +7,7 @@
 }
 
 h3 {
-    color: #8C074F;
+    color: #8c074f;
     font-size: 21px;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
@@ -52,7 +52,7 @@ header {
 
 header h3 {
     margin: 10px;
-    color: #B51B6E;
+    color: #b51b6e;
     text-shadow: 2px 2px pink;
     opacity: 1;
 }
@@ -65,16 +65,6 @@ nav {
 
 nav li {
     margin: 0 10px;
-}
-
-hr {
-    border: none;
-    width: 150px;
-    height: 4px;
-    background: #B51B6E;
-    text-align: center;
-    margin: auto;
-    margin-top: 40px;
 }
 
 @media screen and (max-width: 770px) {
@@ -98,7 +88,6 @@ hr {
 
     header {
         flex-wrap: wrap;
-        
     }
     header nav {
         text-align: center;
@@ -119,13 +108,11 @@ hr {
 /* Hero Section */
 
 .hero {
-    
     height: 100vh;
     position: relative;
     width: 100%;
-    
-    justify-content: center;
 
+    justify-content: center;
 }
 
 .hero .background {
@@ -135,7 +122,7 @@ hr {
     z-index: -2;
     width: 100%;
     height: 100%;
-    background: url("http://www.shiatsu-in-kleve.de/images/bg1.jpg");
+    background: url('http://www.shiatsu-in-kleve.de/images/bg1.jpg');
     background-size: cover;
 }
 
@@ -145,6 +132,19 @@ hr {
     font-size: 34px;
 }
 
+.hero .hero-content h1 {
+    padding: 0 20px;
+}
+
+.hero hr {
+    border: none;
+    width: 150px;
+    height: 4px;
+    background: #b51b6e;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
 
 .hero .introduction {
     display: flex;
@@ -157,14 +157,13 @@ hr {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    
+
     margin: auto;
     text-align: center;
-    
 }
 
 .introduction p {
-    margin:  auto;
+    margin: auto;
     text-align: center;
     min-width: 100px;
     border: 4px solid black;
@@ -173,32 +172,32 @@ hr {
 }
 
 .introduction .blurp .img1 {
-    background: url("https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg");
+    background: url('https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .introduction .blurp .img2 {
-    background: url("https://www.alvinailey.org/sites/default/files/styles/slideshow_image/public/melanie-person.jpg?itok=ocw3xkx_");
+    background: url('../images/johannes.jpg');
     background-size: cover;
     background-position: center;
 }
 .introduction .blurp .img3 {
-    background: url("http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png");
+    background: url('http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png');
     background-size: cover;
     background-position: center;
 }
 
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    
+
     border-bottom: 15px solid black;
     margin: auto;
     margin-top: 20px;
-  }
+}
 
 .btn {
     height: 100px;
@@ -210,33 +209,28 @@ hr {
     opacity: 1;
     margin-top: 30px;
     transition: 0.4s ease-in-out background;
-    
 }
 
 .btn:hover {
-    background: #E8C3CC;
+    background: #e8c3cc;
 }
 
 .arrow-down {
-    
-   
     animation: 1.5s pulsate infinite;
 }
 
 @media screen and (max-width: 620px) {
     .introduction {
-      flex-wrap: wrap;
-        
+        flex-wrap: wrap;
     }
-    
+
     .blurp {
-      flex-basis: 100%;
-      margin: 30px 0;
+        flex-basis: 100%;
+        margin: 30px 0;
     }
-    
+
     .blurp p {
-      max-width: 50px;
-      
+        max-width: 50px;
     }
 
     .hero .hero-content {
@@ -246,23 +240,128 @@ hr {
     .hero {
         height: 100%;
     }
-
-  }
-
-
-
+}
 
 @keyframes pulsate {
     0% {
         transform: scale(1);
     }
-    
+
     50% {
         transform: scale(1.2);
-        
     }
 
     100% {
         transform: scale(1);
     }
+}
+
+/* Über Uns Section */
+
+.person:nth-child(even) {
+    background: #f8fbf4;
+}
+
+.aboutUs {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.aboutUs h3 {
+    align-self: flex-end;
+    margin-right: 3%;
+}
+
+.person {
+    margin: 20px 0 20px 0;
+}
+
+.picAndQuote {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.aboutUs .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    text-align: center;
+}
+
+.aboutUs .img1 {
+    background: url('https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutUs .img2 {
+    background: url('../images/johannes.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.quote {
+    /*    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #999;*/
+
+    display: block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    font-style: italic;
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+    margin-left: 20px;
+}
+
+.quote::before {
+    content: '\201C'; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+
+    /*Positioning*/
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.personText {
+    padding: 20px;
+}
+.personText h3 {
+    border-bottom: 4px solid #b51b6e;
+    font-style: italic;
+}
+
+.personText p {
+    margin-top: 5px;
+    font-family: Verdana;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
 }
