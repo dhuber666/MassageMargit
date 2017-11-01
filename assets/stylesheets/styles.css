@@ -6,6 +6,10 @@
     box-sizing: content-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 h3 {
     color: #8c074f;
     font-size: 21px;

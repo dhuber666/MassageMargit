@@ -35,6 +35,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/scripts\/scroll.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/scroll-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/stylesheets\/styles-min.css": {
 		"aP": 1,
 		"bl": 0,
