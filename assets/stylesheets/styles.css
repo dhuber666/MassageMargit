@@ -369,3 +369,12 @@ nav li {
     line-height: 1.5;
     letter-spacing: 0.25px;
 }
+
+@media screen and (max-width: 460px) {
+    .picAndQuote {
+        display: block;
+    }
+    .picAndQuote .img {
+        margin: 5px auto;
+    }
+}
