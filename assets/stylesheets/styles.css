@@ -176,7 +176,7 @@ nav li {
 }
 
 .introduction .blurp .img1 {
-    background: url('https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg');
+    background: url('../images/margit.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -262,14 +262,31 @@ nav li {
 
 /* Über Uns Section */
 
-.person:nth-child(even) {
+/*.person:nth-child(even) {
     background: #f8fbf4;
+}*/
+
+.person:nth-child(3) {
+    flex-basis: 100%;
 }
 
 .aboutUs {
-    height: 100vh;
     width: 100%;
     background-color: #fff;
+}
+
+.aboutUs h1 {
+    margin: 20px 0 20px 0;
+}
+
+.aboutUs hr {
+    border: none;
+    width: 150px;
+    height: 4px;
+    background: #b51b6e;
+    text-align: center;
+
+    margin: 20px 0 20px 0;
 }
 
 .aboutUs h3 {
@@ -277,26 +294,58 @@ nav li {
     margin-right: 3%;
 }
 
+.personContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .person {
     margin: 20px 0 20px 0;
+    flex-basis: 50%;
+}
+
+.personText hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin-bottom: 40px;
 }
 
 .picAndQuote {
     display: flex;
     align-items: center;
     margin: 0 20px 0 20px;
+    flex-direction: column;
+}
+
+.picAndQuote .img {
+    margin-bottom: 10px;
+}
+
+.last hr {
+    margin: 20px auto;
+}
+
+.last h3 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.last p {
+    text-align: justify;
 }
 
 .aboutUs .img {
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     border-radius: 50%;
 
     text-align: center;
 }
 
 .aboutUs .img1 {
-    background: url('https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg');
+    background: url('../images/margit.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -357,7 +406,7 @@ nav li {
     padding: 20px;
 }
 .personText h3 {
-    border-bottom: 4px solid #b51b6e;
+    /*border-bottom: 4px solid #b51b6e;*/
     font-style: italic;
 }
 
@@ -376,5 +425,82 @@ nav li {
     }
     .picAndQuote .img {
         margin: 5px auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .personContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .aboutUs .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        text-align: center;
+    }
+}
+
+/*Massagen */
+
+.massagen {
+    background-color: #f5faf3;
+    padding: 100px 80px;
+}
+
+.massagen h1 {
+    margin: 20px 0 20px 0;
+}
+
+.massagen p {
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 35px;
+    font-size: 29px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.massagen h3 {
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.massagen .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.massagen .grid li i {
+    font-size: 50px;
+    color: #2196f3;
+    margin-bottom: 25px;
+}
+
+.massagen .grid li h4 {
+    color: #555;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.massagen .grid li p {
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .massagen .grid li {
+        flex-basis: 70%;
+        margin-bottom: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+    .massagen .grid li {
+        flex-basis: 1000%;
     }
 }

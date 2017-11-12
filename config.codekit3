@@ -35,6 +35,26 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/images\/Margit.jpg": {
+		"ft": 16384,
+		"iS": 2835545,
+		"oA": 0,
+		"oAP": "\/assets\/images\/Margit.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/scripts\/scroll-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/scroll-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/scripts\/scroll.js": {
 		"ft": 64,
 		"ma": 0,
